@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+  
     <string name="app_name">CityApp</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">设置</string>
     <string name="hello_world">Hello world!</string>
+    
+    <string name="inforamtion_image_max_width">10dp</string>
 
 </resources>

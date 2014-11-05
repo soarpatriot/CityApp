@@ -1,8 +1,11 @@
 package com.soar.cityapp;
 
-import android.os.Bundle;
 import android.app.Activity;
+import android.os.Bundle;
 import android.view.Menu;
+import android.widget.ListView;
+
+import com.soar.cityapp.adapter.InformationAdapter;
 
 public class MainActivity extends Activity {
 
@@ -10,6 +13,10 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
+		//绑定Layout里面的ListView  
+        ListView informationList = (ListView) findViewById(R.id.ListInformation);  
+        informationList.setAdapter(new InformationAdapter(this));  
 	}
 
 	@Override
